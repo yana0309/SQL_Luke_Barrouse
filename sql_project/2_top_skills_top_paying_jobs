@@ -1,0 +1,33 @@
+--Question: What are the skills required for top-paying Data Analyst roles?
+WITH top_paying_jobs AS (
+    SELECT
+        job_id,
+        job_title,
+        name AS company_name,
+        job_country,
+        job_schedule_type,
+        salary_year_avg
+    FROM job_postings_fact
+    LEFT JOIN company_dim 
+        USING (company_id)
+    WHERE
+        job_title_short = 'Data Analyst' AND
+        job_work_from_home IS TRUE AND
+        salary_year_avg IS NOT NULL
+    ORDER BY salary_year_avg DESC
+    LIMIT 10
+)
+
+SELECT
+    tpj.job_title,
+    tpj.company_name,
+    tpj.job_country,
+    tpj.job_schedule_type,
+    tpj.salary_year_avg,
+    sd.skills
+FROM top_paying_jobs AS tpj
+LEFT JOIN skills_job_dim AS sjd 
+    ON tpj.job_id = sjd.job_id
+JOIN skills_dim AS sd
+    ON sjd.skill_id = sd.skill_id
+

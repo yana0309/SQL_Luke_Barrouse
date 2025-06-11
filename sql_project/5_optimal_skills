@@ -1,0 +1,27 @@
+--Question: What are the most optimal skills to learn (aka it’s in high demand and a high-paying skill) for a data analyst?
+
+WITH skill_stats AS (
+    SELECT
+        sd.skills,
+        ROUND(AVG(jpf.salary_year_avg), 0) AS avg_year_salary,
+        COUNT(jpf.job_id) AS skill_popularity
+    FROM skills_dim sd
+    JOIN skills_job_dim sjd USING (skill_id)
+    JOIN job_postings_fact jpf USING (job_id)
+    WHERE 
+        jpf.job_title_short = 'Data Analyst' AND
+        jpf.job_work_from_home IS TRUE AND
+        jpf.salary_year_avg IS NOT NULL
+    GROUP BY sd.skills
+)
+
+SELECT *
+FROM skill_stats
+WHERE skill_popularity > (
+    SELECT AVG(skill_popularity) FROM skill_stats
+)
+ORDER BY  
+    avg_year_salary DESC,
+    skill_popularity DESC
+LIMIT 20;
+

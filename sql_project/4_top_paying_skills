@@ -1,0 +1,17 @@
+--Question: What are the top skills based on salary for Data Analyst
+
+SELECT
+    sd.skills,
+    ROUND(AVG(jpf.salary_year_avg),0) AS avg_year_salary
+FROM skills_dim sd
+JOIN skills_job_dim sjd
+    USING (skill_id)
+JOIN job_postings_fact jpf 
+    USING (job_id)
+WHERE 
+    jpf.job_title_short = 'Data Analyst' AND
+    jpf.salary_year_avg IS NOT NULL AND
+    jpf.job_work_from_home IS TRUE
+GROUP BY sd.skills
+ORDER BY avg_year_salary DESC
+LIMIT 10
