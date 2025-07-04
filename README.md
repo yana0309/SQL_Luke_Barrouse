@@ -1,6 +1,5 @@
 # Introduction
-This project explores the job market with a focus on remote Data Analyst roles.
-It examines top-paying positions, the most required skills, and highlights the best skills to learn — ones that are popular among employers and offer good salaries
+This project was completed as part of Luke Barousse’s SQL course, using a dataset collected and provided by Luke himself. It explores the job market with a focus on remote Data Analyst roles, examining top-paying positions, the most required skills, and highlighting the best skills to learn — those that are both popular among employers and offer competitive salaries.
 
 ### The questions I wanted to answer through my SQL queries were:
 
@@ -45,16 +44,16 @@ WHERE
 ORDER BY salary_year_avg DESC
 LIMIT 10
 ```
-Here's the key takeaways from analysis of the top data analyst jobs in 2023:
+Here are the key takeaways from the analysis of the top data analyst jobs in 2023:
 
 - **Wide Salary Range**  
  Top 10 paying data analyst roles span from $170 000 to $336 500, indicating significant salary potential in the field.
 - **Diverse Employers**  
- Companies like SmartAsset, Meta, Pinterest and AT&T are among those offering high salaries, showing a broad interest across different industries.
+ Companies like SmartAsset, Meta, Pinterest, and AT&T are among those offering high salaries, showing a broad interest across different industries.
 - **Job Title Variety**  
  There's a high diversity in job titles, from Data Analyst to Director of Analytics, reflecting varied roles and specializations within data analytics.
 - **High Rewards in the US**  
- All of the top 10 high-paying remote data analyst roles are offered by companies based in the United States, highlighting high level of compensation in the American market.
+ All of the top 10 high-paying remote data analyst roles are offered by companies based in the United States, highlighting a high level of compensation in the American market.
 
 ![Top Paying Roles Salary Distribution](assets/1_top_paying_jobs_salary_distribution.jpg)
 *Bar graph visualizing the distribution of the top 10 paying jobs for Data Analysts. Generated via Google Sheets from my SQL query results*
@@ -97,7 +96,7 @@ JOIN skills_dim AS sd
     ON sjd.skill_id = sd.skill_id
 ```
 
-Here's the key insights from skill analysis of the top highest-paying remote data analyst jobs in 2023:
+Here are the key insights from skill analysis of the top highest-paying remote data analyst jobs in 2023:
 
 - **SQL as a Core Requirement**  
  SQL is the most frequently mentioned skill, appearing in 9 out of the top 10 highest-paying remote data analyst job postings.
@@ -133,7 +132,7 @@ GROUP BY sd.skills
 ORDER BY skill_popularity DESC
 LIMIT 10
 ```
-Here's the key takeaways from analysis of the most required skills for remote data analysts in 2023:
+Here are the key takeaways from the analysis of the most required skills for remote data analysts in 2023:
 
 - **SQL Leads**  
  With over 7,000 mentions, SQL is by far the most requested skill for remote data analyst roles.
@@ -167,7 +166,7 @@ GROUP BY sd.skills
 ORDER BY avg_year_salary DESC
 LIMIT 10
 ```
-Here's the key takeaways from analysis of top paying skills for remote data analysts:
+Here are the key takeaways from the analysis of top-paying skills for remote data analysts:
 
 - **Big Data and Data Engineering Tools**  
  Skills like **PySpark**, **Couchbase**, and **Elasticsearch** indicate the growing demand for professionals capable of handling large-scale data processing and storage. Mastery of these technologies enables efficient management and querying of complex datasets in distributed environments.
@@ -214,7 +213,7 @@ ORDER BY
     skill_popularity DESC
 LIMIT 20;
 ```
-Here's the key takeaways from analysis of the most optimal skills for remote data analysts:
+Here are the key takeaways from the analysis of the most optimal skills for remote data analysts:
 
 - **Core Analytics Tools Dominate**  
  **SQL**, **Python**, **R**, and **Tableau** stand out as a combination of highly demanded and well-paid skills. These are the core technologies for querying, analyzing, and visualizing data, making them a must-have foundation for remote Data Analyst roles.
@@ -250,7 +249,7 @@ Throughout this project, I developed and strengthened the following technical an
  SQL, Python, and Tableau consistently appear as both highly demanded and well-compensated skills. These form the backbone of technical requirements for remote Data Analyst roles and are essential for querying, analysis, and visualization tasks.
 
 - **Emerging Technologies Unlock Higher Salaries**  
- Proficiency in working with cloud platforms (Azure, AWS, Snowflakes) is linked to significantly higher pay, even though these skills are less frequently required. Mastering these tools enables analysts to access advanced opportunities in big data and machine learning.
+ Proficiency in working with cloud platforms (Azure, AWS, Snowflake) is linked to significantly higher pay, even though these skills are less frequently required. Mastering these tools enables analysts to access advanced opportunities in big data and machine learning.
 
 - **Traditional Tools Remain Relevant**  
  Despite the rise of modern analytics stacks, Excel and PowerPoint remain widely requested. Their continued presence reflects the importance of versatile reporting and communication skills in day-to-day analyst responsibilities.
