@@ -56,7 +56,7 @@ Here's the key takeaways from analysis of the top data analyst jobs in 2023:
 - **High Rewards in the US**  
  All of the top 10 high-paying remote data analyst roles are offered by companies based in the United States, highlighting high level of compensation in the American market.
 
-![Top Paying Roles Salary Distribution](assets\1_top_paying_jobs_salary_distribution.jpg)
+![Top Paying Roles Salary Distribution](assets/1_top_paying_jobs_salary_distribution.jpg)
 *Bar graph visualizing the distribution of the top 10 paying jobs for Data Analysts. Generated via Google Sheets from my SQL query results*
 
 ### 2. What skills are required for these top-paying jobs?
@@ -111,7 +111,7 @@ Here's the key insights from skill analysis of the top highest-paying remote dat
 - **Cloud and Spreadsheet Skills Add Value**  
  High-paying roles also mention cloud technologies such as Azure and Snowflake, along with Excel, demonstrating the value of both modern platforms and traditional tools.
 
-![Top Skills in High-Paying Jobs](assets\2_top_skills_for_high_paying_jobs.jpg)
+![Top Skills in High-Paying Jobs](assets/2_top_skills_for_high_paying_jobs.jpg)
 *Bar graph visualizing the count of skills for the top 10 paying jobs for remote data analysts. Generated via Google Sheets from my SQL query results*
 
 ### 3. What skills are most required for data analysts?
@@ -144,7 +144,7 @@ Here's the key takeaways from analysis of the most required skills for remote da
 - **Visualization Tools Are Essential**  
  Tableau and Power BI both rank high, emphasizing the value of data visualization in analytics roles.
 
-![Top Required Skills in Data Analyst Jobs in 2023](assets\3_top_required_skills.jpg)
+![Top Required Skills in Data Analyst Jobs in 2023](assets/3_top_required_skills.jpg)
 *Bar graph visualizing the most popular skills required for remote data analysts. Generated via Google Sheets from my SQL query results*
 
 ### 4. Which skills are associated with higher salaries?
@@ -181,7 +181,7 @@ Here's the key takeaways from analysis of top paying skills for remote data anal
 - **Programming and Data Manipulation Environments**  
   Skills including **Swift**, **Jupyter**, and **Pandas** emphasize the need for strong programming capabilities and interactive data exploration. **Jupyter notebooks** and **Pandas** remain fundamental for data manipulation, while **Swift’s** presence suggests niche or cross-disciplinary applications.
 
-![Top Paying Skills for Remote Data Analysts in 2023](assets\4_top_paying_skills.jpg)
+![Top Paying Skills for Remote Data Analysts in 2023](assets/4_top_paying_skills.jpg)
 *Bar graph visualizing the highest-paying skills required for remote data analysts. Generated via Google Sheets from my SQL query results*
 
 ### 5. What are the most optimal skills to learn?
@@ -226,7 +226,7 @@ Here's the key takeaways from analysis of the most optimal skills for remote dat
   Despite their lower salary associations, widely used tools such as **Excel** and **PowerPoint** remain in demand. They play a key role in everyday analysis, reporting, and stakeholder communication.
 
 
-![The Most Optimal Skills for Data Analyst](assets\5_optimal_skills.jpg)
+![The Most Optimal Skills for Data Analyst](assets/5_optimal_skills.jpg)
 *Scatter plot showing the relationship between skill demand and average salary to highlight the most optimal skills for remote Data Analysts. Generated via Excel from my SQL query results*
 
 # What I Learned
